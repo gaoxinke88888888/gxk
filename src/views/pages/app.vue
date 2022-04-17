@@ -1,11 +1,11 @@
 <template>
     <el-button type="primary" @click="loli">go</el-button>
-    <el-image v-for="item in dataList" style="width: 100px; height: 100px" :src="item.url" fit="fill" />
+<!--    <el-image v-for="item in dataList" style="width: 100px; height: 100px" :src="item.url" fit="fill" />-->
 </template>
 
 <script setup lang='ts'>
 import { getloli } from '@/apis/testApi';
-import { reactive, Ref, ref } from 'vue';
+import { reactive, Ref, ref,onMounted } from 'vue';
 
 interface Tu {
     author: string,
